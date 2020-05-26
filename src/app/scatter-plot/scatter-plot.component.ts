@@ -7,7 +7,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 })
 export class ScatterPlotComponent implements OnInit {
 
-  url: string = "../../assets/scatter-plot/index.html";
+  url: string = "https://motolee.github.io/Visualization-Air-Pollution-Data-Analysis/assets/scatter-plot/index.html";
   urlSafe: SafeResourceUrl;
 
   constructor(public sanitizer: DomSanitizer) { }
