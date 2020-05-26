@@ -1,0 +1,11 @@
+<app-header (featureSelected)="onNavigate($event)"></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <app-introduction *ngIf="loadedFeature === 'intro'"></app-introduction>
+      <app-line-chart *ngIf="loadedFeature === 'line-chart'"></app-line-chart>
+      <app-scatter-plot *ngIf="loadedFeature === 'scatter-plot'"></app-scatter-plot>
+      <app-parallel-coordinate *ngIf="loadedFeature === 'parallel-coordinate'"></app-parallel-coordinate>
+    </div>
+  </div>
+</div>
