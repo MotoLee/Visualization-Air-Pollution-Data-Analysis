@@ -7,12 +7,13 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 })
 export class LineChartComponent implements OnInit {
 
-  url: string = "https://motolee.github.io/Visualization-Air-Pollution-Data-Analysis/assets/line-chart/index.html";
+  url: string = "https://motolee.github.io/Visualization-Project-Air-Pollution-Data-Analysis/line-chart";
   urlSafe: SafeResourceUrl;
 
   constructor(public sanitizer: DomSanitizer) { }
 
   ngOnInit() {
     this.urlSafe= this.sanitizer.bypassSecurityTrustResourceUrl(this.url);
+    console.log(this.urlSafe);
   }
 }
